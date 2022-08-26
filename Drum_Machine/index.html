@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- import bootstrap full CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Drum Machine</title>
+
+</head>
+
+<body>
+    <!-- Header label for page -->
+    <header class="drum-head"><b>Drum Machine</b></header>
+
+    <p class="top-text">Welcome to the Drum Machine. Click or press coordinating keys to play
+         sound.</p>
+    <!-- I should be able to see an outer container with a corresponding id="drum-machine" 
+        that contains all other elements. -->
+    <div id='drum-machine'>
+        <!-- Within #drum-machine I can see an element with a corresponding id="display" -->
+        <!-- When a .drum-pad is triggered, a string describing the associated audio clip 
+        is displayed as the inner text of the #display element (each string must be unique).
+        Once you're done, submit the URL to your working project with all its tests passing. -->
+        <div id="display">
+            <span id="drum-pad">Piano Chord 1</span>
+            <span id="drum-pad">Piano Chord 2</span>
+            <span id="drum-pad">Piano Chord 3</span>
+            <span id="drum-pad">Dry-Ohh</span>
+            <span id="drum-pad">Dsc-Oh</span>
+            <span id="drum-pad">Kick-n-Hat</span>
+            <span id="drum-pad">Punchy-Kick</span>
+            <span id="drum-pad">Give-Light</span>
+            <span id="drum-pad">Side-Stick</span>
+        </div>
+
+        <!-- Within #drum-machine I can see 9 clickable drum pad elements, each with a class
+         name of drum-pad, a unique id that describes the audio clip the drum pad will be 
+         set up to trigger, and an inner text that corresponds to one of the following keys
+         on the keyboard: Q, W, E, A, S, D, Z, X, C. The drum pads MUST be in this order.  -->
+        <div id='buttons'>
+            <!-- Within each .drum-pad, there should be an HTML5 audio element which has a src 
+         attribute pointing to an audio clip, a class name of clip, and an id corresponding
+        to the inner text of its parent .drum-pad (e.g. id="Q", id="W", id="E" etc.).  -->
+            <!-- When I click on a .drum-pad element, the audio clip contained in its child audio 
+         element should be triggered. -->
+            <!-- When I press the trigger key associated with each .drum-pad, the audio clip 
+        contained in its child audio element should be triggered (e.g. pressing the Q 
+        key should trigger the drum pad which contains the string "Q", pressing the W key 
+        should trigger the drum pad which contains the string "W", etc.).  -->
+
+            <button class='drum-pad' id="chord-1">Q
+                <audio src="audio/Chord_1.mp3" class="clip" id="Q"></audio>
+
+            </button>
+
+            <button class='drum-pad' id="chord-2">W
+                <audio src="audio/Chord_2.mp3" class="clip" id="W"></audio>
+
+            </button>
+
+            <button class='drum-pad' id="chord-3">E
+                <audio src="audio/Chord_3.mp3" class="clip" id="E"></audio>
+
+            </button>
+
+            <button class='drum-pad' id="dry-ohh">A
+                <audio src="audio/Dry_Ohh.mp3" class="clip" id="A"></audio>
+
+            </button>
+
+            <button class='drum-pad' id="dsc-oh">S
+                <audio src="audio/Dsc_Oh.mp3" class="clip" id="S"></audio>
+
+            </button>
+
+            <button class='drum-pad' id="kick-n-hat">D
+                <audio src="audio/Kick_n_Hat.mp3" class="clip" id="D"></audio>
+
+            </button>
+
+            <button class='drum-pad' id="punchy-kick">Z
+                <audio src="audio/punchy_kick_1.mp3" class="clip" id="Z"></audio>
+
+            </button>
+
+            <button class='drum-pad' id="give-light">X
+                <audio src="audio/Give_us_a_light.mp3" class="clip" id="X"></audio>
+
+            </button>
+
+            <button class='drum-pad' id="side-stick">C
+                <audio src="audio/side_stick_1.mp3" class="clip" id="C"></audio>
+
+            </button>
+
+          </div>
+    </div>
+    
+
+
+     <footer class="footer">Contact Me: monicawhite751@gmail.com</footer>
+
+    
+    
+    <!-- tests -->
+    <!-- <script src="pcc-userstory-tests.js"></script> -->
+
+    <!-- import jquery -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!-- import bootstrap scripts -->
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- import D3.js -->
+    <script type="text/javascript" src="js/d3.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
